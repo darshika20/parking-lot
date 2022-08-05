@@ -10,5 +10,11 @@ import lombok.Setter;
 public class Slot {
 
     private int slotNo;
-    private String carId;
+    private String carRegistrationId;
+    private boolean isReserved;
+
+    public Slot(int slotNo) {
+        this.slotNo = slotNo;
+        isReserved = false;
+    }
 }
