@@ -1,6 +1,5 @@
 package controller;
 
-import dto.ParkingLot;
 import service.ParkingLotService;
 
 public class ParkingLotController {
@@ -13,5 +12,13 @@ public class ParkingLotController {
 
     public void parkCar(String registrationId, String color) {
         parkingLotService.parkCar(registrationId, color);
+    }
+
+    public void unparkCar(int slotId) {
+        parkingLotService.unparkCar(slotId);
+    }
+
+    public void getStatus() {
+        parkingLotService.getStatus();
     }
 }

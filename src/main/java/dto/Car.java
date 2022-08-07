@@ -6,7 +6,6 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Builder
 public class Car {
 
     private Ticket ticket;
@@ -16,5 +15,14 @@ public class Car {
     public Car (String registrationId, String color) {
         this.registrationId = registrationId;
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "ticket=" + ticket +
+                ", registrationId='" + registrationId + '\'' +
+                ", color='" + color + '\'' +
+                '}';
     }
 }

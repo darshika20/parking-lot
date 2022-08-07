@@ -6,11 +6,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Builder
 public class Slot {
 
     private int slotNo;
-    private String carRegistrationId;
+    private Car car;
     private boolean isReserved;
 
     public Slot(int slotNo) {
